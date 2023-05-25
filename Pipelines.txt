@@ -1,0 +1,35 @@
+Pipeline1
+
+1. Convert country to its continent
+2. Impute numeric_cols with median and then std scaler for all num_cols
+3. Ordinal_encoder cat_cols
+4. Drop: `GDP`, `thinness 5-9 years`, `under-five deaths`, 'Year', 'Country'
+
+-------------------------------------------------------------------------------
+Pipeline2
+
+1. Impute numeric_cols with median and then std scaler for all num_cols
+2. Ordinal_encoder cat_cols
+3. Drop: `GDP`, `thinness 5-9 years`, `under-five deaths`, 'Year', 'Country', 'Schooling'
+
+-------------------------------------------------------------------------------
+Pipeline3
+
+1. Impute numeric_cols with median and then std scaler for all num_cols
+2. one hot encoding cat_cols
+3. Drop: `GDP`, `thinness 5-9 years`, `under-five deaths`, 'Year', 'Country', 'Schooling'
+
+-------------------------------------------------------------------------------
+Pipeline4
+
+1. Impute numeric_cols with median and then MinMax scaler and all num_cols
+2. one hot encoding cat_cols
+3. Drop: `GDP`, `thinness 5-9 years`, `under-five deaths`, 'Year', 'Country', 'Schooling'
+
+-------------------------------------------------------------------------------
+Pipeline5
+
+ 1. Impute numeric_cols with median and then std scaler and all num_cols
+ 2. Ordinal_encoder cat_cols
+ 3. Drop: `GDP`, `thinness 5-9 years`, `under-five deaths`, 'Year', 'Country', 'Schooling'
+ 4. PCA : reduce feature 12 columns 
